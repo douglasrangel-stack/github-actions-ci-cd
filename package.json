@@ -9,7 +9,9 @@
     "lint": "next lint",
     "lint:fix": "next lint --fix",
     "export": "rm -rf out && next build",
-    "export-rename": "rm -rf out && rm -rf build && next build && mv ./out ./build"
+    "build:export": "rm -rf out && rm -rf build && next build && mv ./out ./build",
+    "deploy": "yarn build:export && npx vercel ./build --confirm --no-clipboard",
+    "deploy:prod": "yarn build:export && vercel ./build --confirm --no-clipboard --token=$VERCEL_TOKEN --prod"
   },
   "author": "Douglas Rangel <douglascoutinho202@gmail.com>",
   "license": "MIT",
