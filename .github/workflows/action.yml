@@ -27,6 +27,7 @@ jobs:
       - name: Run a list files
         run: ls -la
 
-        # Runs a single command using the runners shell
+      - name: Run Install
+        run: yarn install
       - name: Run Linter
         run: yarn lint
