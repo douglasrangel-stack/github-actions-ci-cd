@@ -1,8 +1,8 @@
 export default function HomeScreen() {
   return (
     <div>
-      <h1>Home</h1>
-      <p>Fazendo deploy na vercel</p>
+      <h1>Douglas</h1>
+      <p>Adicionando Storybook</p>
     </div>
-  );
+  )
 }
