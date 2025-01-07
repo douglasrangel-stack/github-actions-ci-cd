@@ -4,5 +4,5 @@ export default function HomeScreen() {
       <h1>Douglas</h1>
       <p>Adicionando Storybook</p>
     </div>
-  )
+  );
 }
